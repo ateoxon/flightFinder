@@ -6,4 +6,16 @@ from django.http import JsonResponse
 
 class FlightByCountry(View):
 	def get(self,request,fromc,to):
-		pass
+		return JsonResponse(request)
+
+class FlightByProvinceState(View):
+        def get(self,request,fromps,to):
+                return JsonResponse(request)
+
+class FlightByCity(View):
+        def get(self,request,fromc,to):
+                return JsonResponse(request)
+
+class FlightByAirport(View):
+        def get(self,request,froma,to):
+                return JsonResponse(request)

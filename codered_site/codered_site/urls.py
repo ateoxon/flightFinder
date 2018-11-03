@@ -19,5 +19,8 @@ from flights.views import *
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
-	path('search/country/<str:fromc>/<str:to>',FlightByCountry.as_view()),
+    path('search/country/<str:fromc>/<str:to>',FlightByCountry.as_view()),
+    path('search/provincestate/<str:fromps>/<str:to>',FlightByProvinceState.as_view()),
+    path('search/city/<str:fromc>/<str:to>',FlightByCity.as_view()),
+    path('search/airport/<str:froma>/<str:to>',FlightByAirport.as_view())
 ]
