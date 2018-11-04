@@ -17,11 +17,31 @@ class FlightByCountry(View):
 
 class FlightByProvinceState(View):
         def get(self,request,fromps,to):
-                return JsonResponse({})
+            origin = getCode(str(fromc))
+            destination = getCode(str(to))
+            best, top5 = getFlights(origin, destination)
+            dict = {"best":best, "top5":top5}
+
+            return JsonResponse(dict.json())
 
 class FlightByCity(View):
         def get(self,request,fromc,to):
-                return JsonResponse({})
+            origin = getCode(str(fromc))
+            destination = getCode(str(to))
+            best, top5 = getFlights(origin, destination)
+            dict = {"best":best, "top5":top5}
+
+            return JsonResponse(dict.json())
+
+class FlightByAirport(View):
+        def get(self,request,froma,to):
+            origin = getCode(str(fromc))
+            destination = getCode(str(to))
+            best, top5 = getFlights(origin, destination)
+            dict = {"best":best, "top5":top5}
+
+            return JsonResponse(dict.json())
 
 def index(request):
     return render(request,'index2.html')
+
