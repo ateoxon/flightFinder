@@ -15,5 +15,7 @@ def getFlights(depart, arrive):
     if resp.text == '404: Not Found':
         return None
 
-    return resp.json()['best_results']
+    top5 = resp.json['data'][0:4]
+
+    return resp.json()['best_results'], top5
 
