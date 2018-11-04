@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Hackathon Flight Finder</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="css/testFlight.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- splash header -->
+    <header class="masthead d-flex">
+      <div class="container text-center my-auto">
+        <h1 class="mb-1">Flight Finder!</h1>
+        <h3 class="mb-5">
+          <em>find cheap flights here! </em>
+        </h3>
+      </div>
+      <div class="overlay"></div>
+    </header>
+
+    <!-- input area -->
+    <section class="content-section bg-light" id="about">
+
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Find the cheapest flight for your trip here!</h2>
+
+          </div>
+        </div>
+      </div>
+
+      <h2>Departure:</h2>
+      <form>
+        <div class="departure-form">
+
+          <div class="col">
+            <input type="text" class="form-control" id = "departureCountry" placeholder="Country">
+          </div>
+
+          <div class="col">
+            <input type="text" class="form-control" id = "departureState" placeholder="State">
+          </div>
+
+          <div class="col">
+            <input type="text" class="form-control" id = "departureCity" placeholder="City">
+          </div>
+
+        </div>
+
+</br>
+</br>
+      <h2>Arrival:</h2>
+
+        <div class="departure-form">
+
+          <div class="col">
+            <input type="text" class="form-control" id = "arrivalCountry" placeholder="Country">
+          </div>
+
+          <div class="col">
+            <input type="text" class="form-control" id = "arrivalState" placeholder="State">
+          </div>
+
+          <div class="col">
+            <input type="text" class="form-control" id = "arrivalCity" placeholder="City">
+          </div>
+
+        </div>
+
+      </br>
+      </br>
+
+        <div>
+        <h3>departure date</h3>
+        <input type="date" id="departureDate" name="trip"
+               
+               min="2018-01-01" max="2018-12-31" />
+        </div>
+  </br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+      </form>
+
+
+    </section>
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/testFlight.js"></script>
+
+  </body>
+
+</html>
