@@ -24,4 +24,4 @@ class FlightByCity(View):
                 return JsonResponse({})
 
 def index(request):
-    return render(request,'static/index.html')
+    return render(request,'index2.html')
