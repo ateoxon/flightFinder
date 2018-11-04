@@ -23,6 +23,5 @@ class FlightByCity(View):
         def get(self,request,fromc,to):
                 return JsonResponse({})
 
-class FlightByAirport(View):
-        def get(self,request,froma,to):
-                return JsonResponse({})
+def index(request):
+    return render(request,'static/index.html')
