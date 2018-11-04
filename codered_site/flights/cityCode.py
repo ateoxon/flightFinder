@@ -11,11 +11,9 @@ def getCode(locations):
 
 # accepts city codes retrieved with getCode(locations) for depart and arrive
 def getFlights(depart, arrive):
-    resp = requests.get('https://api.skypicker.com/flights?fly_from={0}&fly_to={1}'.format(depart, arrive))
+    resp = requests.get('https://api.skypicker.com/flights?fly_from={0}&fly_to={1}&currency=USD'.format(depart, arrive))
     if resp.text == '404: Not Found':
         return None
-
-    top5 = resp.json['data'][0:4]
+    top5 = resp.json()['data'][0:4]
 
     return resp.json()['best_results'], top5
-
