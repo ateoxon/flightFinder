@@ -20,7 +20,8 @@ from flights.views import *
 urlpatterns = [
     #path('admin/', admin.site.urls),
     path('search/country/<str:fromc>/<str:to>',FlightByCountry.as_view()),
-    path('search/provincestate/<str:fromc>/<str:fromps>/<str:toc>/<str:to>',FlightByProvinceState.as_view()),
-    path('search/city/<str:fromc>/<str:froms>/<str:fromci>/<str:to>/<str:tos>/<str:toci>',FlightByCity.as_view()),
+    #path('search/<str:fromc>/<str:toc>',search),
+    #path('search/provincestate/<str:fromc>/<str:fromps>/<str:toc>/<str:to>',FlightByProvinceState.as_view()),
+    #path('search/city/<str:fromc>/<str:froms>/<str:fromci>/<str:to>/<str:tos>/<str:toci>',FlightByCity.as_view()),
     path('',index)
 ]

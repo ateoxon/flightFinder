@@ -12,6 +12,12 @@
     <div id="map"></div>
     <div class="container">
       <div class="text-title">
+        From: <span id="from_location">M</span>
+      </div>
+      <div class="text-title">
+        To: <span id="to_location">D</span>
+      </div>
+      <div class="text-title">
         Cheapest Flight
       </div>
       <table class="table table-bordered">
@@ -19,12 +25,14 @@
           <tr>
             <th scope="col">Price</th>
             <th scope="col">Distance</th>
+            <th scope="col">Duration</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>$100 </td>
-            <td>10000 Miles</td>
+            <td id="cheapest_price">$100 </td>
+            <td id="cheapest_distance">10000 Miles</td>
+            <td id="cheapest_duration">1000 sec</td>
           </tr>
         </tbody>
       </table>
@@ -36,9 +44,10 @@
           <tr>
             <th scope="col">Price</th>
             <th scope="col">Distance</th>
+            <th scope="col">Duration</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody id="best-5-results">
           <tr>
             <td>$100 </td>
             <td>10000 Miles</td>

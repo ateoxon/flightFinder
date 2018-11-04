@@ -2,7 +2,7 @@
 // the first trans-Pacific flight between Oakland, CA, and Brisbane,
 // Australia which was made by Charles Kingsford Smith.
 //$(document).ready({
-  function initMap() {
+  /*function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 6,
       center: {lat: 31, lng: -96},
@@ -24,5 +24,5 @@
     });
 
     flightPath.setMap(map);
-  }
+  }*/
 //});
